@@ -13,30 +13,28 @@ moving_window(array, time_array, window_size, threshold, alpha)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{array}{
-%%     ~~Describe \code{array} here~~
+"array" is the item to be interpolated, should be a vector.
 }
   \item{time_array}{
-%%     ~~Describe \code{time_array} here~~
+A vector containing the time period in which the "array" argument should be interpolated.
+It must be of the same length of "array", because they'll both passed to lm() in the form
+of array ~ time_array.
+
 }
   \item{window_size}{
-%%     ~~Describe \code{window_size} here~~
+The length of the window size on which the first element, "array" should be interpolated (the temporal scale is the same of the "time_array" object). It must be odd (the result of the interpolation is assigned to the median element), if even it's forced to the first odd integer contained in the size passed.
 }
   \item{threshold}{
-%%     ~~Describe \code{threshold} here~~
+If the number of non-NA elements in "array" is below this threshold, the result of the linear interpolation on the window considered is forced to NA.
 }
   \item{alpha}{
-%%     ~~Describe \code{alpha} here~~
+Threshold of significancy for p-value on angular coefficient.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+The function returns a vector of the same length of "array" and "time_array". The first and the last floor(window_size/2) elements are always NA's (they're used for the estimate of the median element of the first and last iteration of the window), while the others contain the value of the angular coeffincient of the interpolating function (lm$coefficients[2]). 
+If pvalue is above the significancy threshold ("alpha"), the corresponding value is set to 0, i.e. no trend.
 }
 \references{
 %% ~put references to the literature/web site here ~
