@@ -26,11 +26,8 @@ Object of class "numeric", the maximum value of the interval.
 This function doesn't return anything, it only gives an error (entering debug mode) if the parameter is outside the specified range.
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+This function returns nothing. It only gives an error message if the parameter it's outside the 
+specified range.
 }
 \references{
 %% ~put references to the literature/web site here ~

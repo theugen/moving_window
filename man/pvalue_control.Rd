@@ -52,7 +52,7 @@ y <- runif(50,0,50)
 x <- c(1:50)
 test <- lm(y~x)
 bool <- pvalue_control(test, alpha=0.05) #Pass the result of lm and a max value for pvalue
-                                         #In this example, alpha=5%
+                                         #In this example, alpha=5\%
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
