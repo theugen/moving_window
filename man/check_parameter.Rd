@@ -46,13 +46,11 @@ Observations and bug segnalations are welcome.
 }
 \examples{
 
-alpha <- 0.05 #A parameter to check, for example the threshold for the pvalue (like the other probabilities, must be in [0,1])
+alpha <- 0.05 
+# A parameter to check, for example the threshold for the pvalue 
+# (like the other probabilities, must be in [0,1])
 check_parameter(alpha, vmin=0, vmax=1)
 
-******
-
-probability <- 2 #A parameter to check
-check_parameter(probability, vmin=0, vmax=1) #This obviously returns an error, because probability must be in [0,1]
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

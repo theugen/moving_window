@@ -1,24 +1,33 @@
-\name{moving_window-package}
-\alias{moving_window-package}
-\alias{moving_window}
+\name{mwindow-package}
+\alias{mwindow-package}
+\alias{mwindow}
 \docType{package}
 \title{
-\packageTitle{moving_window}
+\packageTitle{mwindow}
 }
 \description{
-\packageDescription{moving_window}
+\packageDescription{mwindow}
 }
 \details{
 
 The DESCRIPTION file:
-\packageDESCRIPTION{moving_window}
-\packageIndices{moving_window}
-~~ An overview of how to use the package, including the most important functions ~~
+\packageDESCRIPTION{mwindow}
+\packageIndices{mwindow}
+This package is a simple collection of functions, based on lm(), to use linear interpolation
+with a moving window.
+This package contains the following functions:
+
+moving_window()
+check_parameter()
+odd_wsize()
+pvalue_control()
+
+Details can be found in the man page of every function.
 }
 \author{
-\packageAuthor{moving_window}
+\packageAuthor{mwindow}
 
-Maintainer: \packageMaintainer{moving_window}
+Maintainer: \packageMaintainer{mwindow}
 }
 \references{
 ~~ Literature or other references for background information ~~
@@ -31,5 +40,5 @@ Maintainer: \packageMaintainer{moving_window}
 ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
-~~ simple examples of the most important functions ~~
+
 }

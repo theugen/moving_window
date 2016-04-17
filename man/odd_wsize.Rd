@@ -2,10 +2,12 @@
 \alias{odd_wsize}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Check the oddity of the window
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+This function checks if the size of the window provided is odd.
+If not, it gives a warning and it returns a window size equal to
+the first odd integer contained in the provided size.
 }
 \usage{
 odd_wsize(wsize)

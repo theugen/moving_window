@@ -1,11 +1,9 @@
-Package: moving_window
+Package: mwindow
 Type: Package
 Title: Linear interpolation on a moving window.
 Version: 1.0
 Date: 2016-02-03
 Author: Eugenio Thieme
 Maintainer: Eugenio Thieme <eugen@thieme.it>
-Description: The package provides some functions to do linear interpolation on a moving 
-window. It has been written for the analysis of temporal data, but it can be useful for
-any data that has necessity to be interpolated with lm().
+Description: The package provides some functions to do linear interpolation on a moving window. It has been written for the analysis of temporal data, but it can be useful for any data that has necessity to be interpolated with lm().
 License: GPL-3
